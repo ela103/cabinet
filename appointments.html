@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prendre un rendez-vous - Cabinet Médical</title>
+    <meta name="description" content="Prenez rendez-vous en ligne avec notre cabinet médical. Choisissez votre médecin, votre date et votre heure de consultation.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>Cabinet Médical</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="appointments.html" class="active">Rendez-vous</a></li>
+                <li><a href="doctors.html">Nos Médecins</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="about.html">À propos</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="blog.html">Blog</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-hero small-hero">
+            <div class="container">
+                <h1>Prendre un rendez-vous</h1>
+                <p>
+                    Remplissez le formulaire ci-dessous pour réserver votre consultation
+                    avec l’un de nos médecins en quelques étapes simples.
+                </p>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <div class="container">
+                <h2>Une prise de rendez-vous simple et rapide</h2>
+                <p>
+                    Notre cabinet médical met à votre disposition un formulaire en ligne
+                    pour faciliter la réservation d’une consultation. Vous pouvez choisir
+                    la spécialité adaptée à votre besoin, sélectionner un médecin
+                    et proposer une date de consultation.
+                </p>
+                <p>
+                    Cette organisation permet de mieux préparer la consultation
+                    et de simplifier le suivi administratif.
+                </p>
+            </div>
+        </section>
+
+        <section class="appointment-section">
+            <div class="container appointment-layout">
+
+                <div class="appointment-form-card">
+                    <h2>Formulaire de rendez-vous</h2>
+                    <form id="appointmentForm">
+                        <div class="form-group">
+                            <label for="name">Nom complet</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Téléphone</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="doctor">Médecin</label>
+                            <select id="doctor" name="doctor" required>
+                                <option value="">Sélectionnez un médecin</option>
+                                <option value="dr-smith">Dr. Smith - Cardiologue</option>
+                                <option value="dr-johnson">Dr. Johnson - Dermatologue</option>
+                                <option value="dr-williams">Dr. Williams - Généraliste</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="date">Date</label>
+                            <input type="date" id="date" name="date" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="time">Heure</label>
+                            <input type="time" id="time" name="time" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="reason">Motif de la consultation</label>
+                            <textarea id="reason" name="reason" required></textarea>
+                        </div>
+
+                        <button type="submit" class="submit-btn">Confirmer le rendez-vous</button>
+                    </form>
+                </div>
+
+                <div class="appointment-info-card">
+                    <h2>Informations utiles</h2>
+                    <p>
+                        Avant de confirmer votre rendez-vous, veillez à bien sélectionner
+                        la spécialité et l’horaire souhaités. Si vous consultez pour la première fois,
+                        vous pouvez décrire brièvement le motif de votre consultation.
+                    </p>
+
+                    <h3>Pourquoi réserver en ligne ?</h3>
+                    <ul class="benefits-list">
+                        <li>Choix rapide du médecin</li>
+                        <li>Visualisation claire des horaires</li>
+                        <li>Organisation facilitée</li>
+                        <li>Meilleure préparation de la consultation</li>
+                    </ul>
+
+                    <h3>Types de consultations</h3>
+                    <p>
+                        Le cabinet propose des rendez-vous en médecine générale,
+                        en cardiologie et en dermatologie. Selon la situation,
+                        le médecin peut assurer un suivi ou recommander une orientation complémentaire.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="content-section light-section">
+            <div class="container">
+                <h2>Mes rendez-vous</h2>
+                <p>
+                    Les rendez-vous que vous avez enregistrés apparaissent ci-dessous.
+                    Vous pouvez les consulter et les annuler si nécessaire.
+                </p>
+                <div class="appointments-list">
+                    <div id="appointmentsList">
+                        <!-- Les rendez-vous seront ajoutés ici dynamiquement -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <div class="container">
+                <h2>Besoin d’aide avant de réserver ?</h2>
+                <p>
+                    Si vous avez une question concernant une spécialité, un médecin
+                    ou l’organisation des consultations, vous pouvez consulter notre
+                    page <a href="faq.html">FAQ</a> ou nous contacter directement.
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Cabinet Médical. Tous droits réservés.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,932 @@
+/* Reset et styles de base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Header et Navigation */
+header {
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo h1 {
+    color: #2c3e50;
+    font-size: 1.5rem;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin-left: 2rem;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #2c3e50;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #3498db;
+}
+
+.nav-links a.active {
+    color: #3498db;
+}
+footer {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    .nav-links {
+        margin-top: 1rem;
+    }
+
+    .nav-links li {
+        margin: 0 1rem;
+    }
+
+    .hero h2 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .nav-links {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav-links li {
+        margin: 0.5rem 0;
+    }
+
+}
+/* Section Hero */
+.hero {
+    background: linear-gradient(rgba(44, 62, 80, 0.8), rgba(44, 62, 80, 0.8)),
+                url('https://images.unsplash.com/photo-1538108149393-fbbd81895907?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 0 1rem;
+    margin-top: 60px;
+}
+/* Section Features */
+.features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    padding: 4rem 5%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.feature-card {
+    text-align: center;
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+.feature-card:hover {
+    transform: translateY(-5px);
+}
+
+.feature-card i {
+    font-size: 2.5rem;
+    color: #3498db;
+    margin-bottom: 1rem;
+}
+
+.feature-card h3 {
+    margin-bottom: 1rem;
+    color: #2c3e50;
+}
+
+.hero h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+.cta-button {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background-color: #3498db;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #2980b9;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 5%;
+}
+
+.intro-section,
+.services-preview,
+.why-us,
+.faq-home,
+.contact-preview {
+    padding: 4rem 0;
+}
+
+.intro-section p,
+.why-us p,
+.faq-item p,
+.contact-preview p {
+    margin-top: 1rem;
+    color: #555;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.service-box {
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.service-box h3 {
+    margin-bottom: 0.8rem;
+    color: #2c3e50;
+}
+
+.center-btn {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.benefits-list {
+    margin-top: 1rem;
+    padding-left: 1.2rem;
+    color: #555;
+}
+
+.benefits-list li {
+    margin-bottom: 0.7rem;
+}
+
+.faq-item {
+    background: #fff;
+    padding: 1.2rem;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+    margin-top: 1rem;
+}
+.page-hero {
+    background: linear-gradient(rgba(44, 62, 80, 0.82), rgba(44, 62, 80, 0.82)),
+                url('https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&w=1400&q=80');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 140px 20px 80px;
+    margin-top: 60px;
+}
+
+.small-hero h1 {
+    font-size: 2.7rem;
+    margin-bottom: 1rem;
+}
+
+.small-hero p {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 1.1rem;
+}
+
+.content-section {
+    padding: 4rem 0;
+}
+
+.light-section {
+    background-color: #f8f9fa;
+}
+
+.services-grid-section {
+    padding: 2rem 0 4rem;
+}
+
+.service-card {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    padding: 2rem;
+}
+
+.service-card h2 {
+    margin: 1rem 0;
+    color: #2c3e50;
+}
+
+.service-card p {
+    color: #555;
+    margin-bottom: 1rem;
+}
+
+.service-icon {
+    font-size: 2.2rem;
+    color: #3498db;
+}
+
+@media (max-width: 768px) {
+    .small-hero h1 {
+        font-size: 2rem;
+    }
+
+    .small-hero p {
+        font-size: 1rem;
+    }
+}
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.contact-info p {
+    margin-bottom: 0.8rem;
+    color: #555;
+}
+
+.contact-info i {
+    color: #3498db;
+    margin-right: 8px;
+}
+
+.contact-form {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.contact-form h2 {
+    margin-bottom: 1rem;
+}
+
+@media (max-width: 768px) {
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+}
+.faq-list {
+    display: grid;
+    gap: 1.5rem;
+}
+
+.faq-card {
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+}
+
+.faq-card h2 {
+    color: #2c3e50;
+    margin-bottom: 0.8rem;
+    font-size: 1.2rem;
+}
+
+.faq-card p {
+    color: #555;
+}
+
+.faq-card a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+.faq-card a:hover {
+    text-decoration: underline;
+}
+.blog-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.blog-card {
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.blog-card:hover {
+    transform: translateY(-5px);
+}
+
+.blog-image {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.blog-card-content {
+    padding: 1.5rem;
+}
+
+.blog-card-content h3 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+}
+
+.blog-card-content p {
+    color: #555;
+    margin-bottom: 1rem;
+}
+
+.read-more {
+    color: #3498db;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.read-more:hover {
+    text-decoration: underline;
+}
+.article-content {
+    max-width: 900px;
+}
+
+.article-image {
+    width: 100%;
+    height: 380px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 2rem;
+}
+
+.article-content h2 {
+    color: #2c3e50;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.article-content p {
+    color: #555;
+    margin-bottom: 1rem;
+}
+
+.article-actions {
+    margin-top: 2rem;
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.secondary-link {
+    color: #3498db;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.secondary-link:hover {
+    text-decoration: underline;
+}
+.doctor-extra {
+    color: #555;
+    margin-bottom: 1rem;
+    line-height: 1.6;
+}
+
+.doctor-card h2 {
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+    font-size: 1.4rem;
+}
+.appointment-section {
+    padding: 2rem 0 4rem;
+}
+
+.appointment-layout {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 2rem;
+    align-items: start;
+}
+
+.appointment-form-card,
+.appointment-info-card {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.appointment-form-card h2,
+.appointment-info-card h2,
+.appointment-info-card h3 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+}
+
+.appointment-info-card p {
+    color: #555;
+    margin-bottom: 1rem;
+}
+
+.appointments-list {
+    margin-top: 1.5rem;
+}
+
+.appointment-card {
+    background-color: #fff;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.08);
+}
+
+.cancel-btn {
+    background-color: #e74c3c;
+    color: #fff;
+    padding: 0.7rem 1rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 0.8rem;
+}
+
+.cancel-btn:hover {
+    background-color: #c0392b;
+}
+
+@media (max-width: 900px) {
+    .appointment-layout {
+        grid-template-columns: 1fr;
+    }
+}
+/* ===== Amélioration générale des formulaires ===== */
+.form-group {
+    margin-bottom: 1.3rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #2c3e50;
+    font-weight: 600;
+    font-size: 0.95rem;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 0.95rem 1rem;
+    border: 1px solid #d9e2ec;
+    border-radius: 10px;
+    font-size: 1rem;
+    background-color: #fff;
+    color: #333;
+    outline: none;
+    transition: all 0.3s ease;
+    box-shadow: inset 0 1px 2px rgba(0,0,0,0.03);
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: #3498db;
+    box-shadow: 0 0 0 4px rgba(52, 152, 219, 0.12);
+}
+
+.form-group textarea {
+    min-height: 130px;
+    resize: vertical;
+}
+
+/* ===== Placeholder ===== */
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: #9aa5b1;
+}
+
+/* ===== Cartes de formulaire ===== */
+.appointment-form-card,
+.contact-form,
+.appointment-info-card {
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 2rem;
+    box-shadow: 0 10px 30px rgba(44, 62, 80, 0.08);
+    border: 1px solid #eef2f7;
+}
+
+/* ===== Boutons principaux ===== */
+.submit-btn,
+.cta-button,
+.book-btn {
+    display: inline-block;
+    background: linear-gradient(135deg, #3498db, #2980b9);
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    padding: 0.95rem 1.4rem;
+    font-size: 1rem;
+    font-weight: 600;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 8px 18px rgba(52, 152, 219, 0.2);
+}
+
+.submit-btn:hover,
+.cta-button:hover,
+.book-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 22px rgba(52, 152, 219, 0.25);
+}
+
+.submit-btn:active,
+.cta-button:active,
+.book-btn:active {
+    transform: translateY(0);
+}
+
+/* ===== Bouton annuler ===== */
+.cancel-btn {
+    background: linear-gradient(135deg, #e74c3c, #c0392b);
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    padding: 0.8rem 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 8px 18px rgba(231, 76, 60, 0.18);
+}
+
+.cancel-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 22px rgba(231, 76, 60, 0.24);
+}
+
+/* ===== Boutons largeur complète dans formulaires ===== */
+.appointment-form-card .submit-btn,
+.contact-form .submit-btn {
+    width: 100%;
+    margin-top: 0.5rem;
+}
+
+/* ===== Section rendez-vous / contact plus élégante ===== */
+.appointment-section,
+.content-section {
+    position: relative;
+}
+
+.appointment-info-card h2,
+.appointment-info-card h3,
+.contact-form h2,
+.appointment-form-card h2 {
+    color: #2c3e50;
+}
+
+.appointment-info-card p,
+.contact-info p,
+.contact-form p {
+    color: #5b6975;
+    line-height: 1.7;
+}
+
+/* ===== Icônes dans contact ===== */
+.contact-info i {
+    width: 20px;
+    color: #3498db;
+}
+
+/* ===== Liens secondaires ===== */
+.secondary-link {
+    color: #2980b9;
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.secondary-link:hover {
+    color: #1f6694;
+    text-decoration: underline;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+    .appointment-form-card,
+    .contact-form,
+    .appointment-info-card {
+        padding: 1.4rem;
+        border-radius: 14px;
+    }
+
+    .submit-btn,
+    .cta-button,
+    .book-btn,
+    .cancel-btn {
+        width: 100%;
+    }
+}
+/* ===== Amélioration visuelle globale des pages internes ===== */
+body {
+    background-color: #f4f8fb;
+}
+
+/* Sections */
+.content-section {
+    padding: 4.5rem 0;
+}
+
+.light-section {
+    background: linear-gradient(180deg, #f8fbfd 0%, #eef5fa 100%);
+}
+
+/* Containers visuellement plus propres */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 5%;
+}
+
+/* Hero interne amélioré */
+.page-hero {
+    background: linear-gradient(rgba(27, 53, 81, 0.78), rgba(27, 53, 81, 0.78)),
+                url('https://images.unsplash.com/photo-1516549655169-df83a0774514?auto=format&fit=crop&w=1400&q=80');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 150px 20px 90px;
+    margin-top: 60px;
+    position: relative;
+}
+
+.page-hero::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at center, rgba(255,255,255,0.05), transparent 60%);
+}
+
+.page-hero .container {
+    position: relative;
+    z-index: 2;
+}
+
+.small-hero h1 {
+    font-size: 2.8rem;
+    margin-bottom: 1rem;
+    letter-spacing: 0.3px;
+}
+
+.small-hero p {
+    max-width: 760px;
+    margin: 0 auto;
+    font-size: 1.08rem;
+    line-height: 1.8;
+    color: rgba(255,255,255,0.92);
+}
+
+/* Titres */
+.content-section h2,
+.contact-preview h2,
+.faq-card h2,
+.service-card h2,
+.doctor-card h2 {
+    color: #1f3c57;
+    font-weight: 700;
+    letter-spacing: 0.2px;
+}
+
+.content-section p,
+.service-card p,
+.faq-card p,
+.contact-preview p {
+    color: #5b6975;
+    line-height: 1.8;
+}
+
+/* Cartes améliorées */
+.service-card,
+.faq-card,
+.contact-form,
+.contact-info,
+.appointment-form-card,
+.appointment-info-card,
+.doctor-card,
+.blog-card,
+.service-box {
+    background: rgba(255,255,255,0.96);
+    border: 1px solid rgba(52, 152, 219, 0.08);
+    border-radius: 18px;
+    box-shadow: 0 14px 35px rgba(31, 60, 87, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover,
+.faq-card:hover,
+.doctor-card:hover,
+.blog-card:hover,
+.service-box:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 18px 40px rgba(31, 60, 87, 0.12);
+}
+
+/* Services */
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.8rem;
+    margin-top: 2rem;
+}
+
+.service-card,
+.service-box {
+    padding: 2rem;
+}
+
+.service-icon {
+    width: 64px;
+    height: 64px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: linear-gradient(135deg, rgba(52,152,219,0.12), rgba(41,128,185,0.18));
+    color: #3498db;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+/* FAQ */
+.faq-list {
+    display: grid;
+    gap: 1.4rem;
+}
+
+.faq-card {
+    padding: 1.6rem 1.6rem 1.4rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.faq-card::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 18px;
+    bottom: 18px;
+    width: 5px;
+    border-radius: 10px;
+    background: linear-gradient(180deg, #3498db, #2c80b9);
+}
+
+.faq-card h2 {
+    font-size: 1.18rem;
+    margin-bottom: 0.8rem;
+    padding-left: 0.8rem;
+}
+
+.faq-card p {
+    padding-left: 0.8rem;
+}
+
+/* About / Why / values */
+.benefits-list {
+    margin-top: 1rem;
+    padding-left: 1.2rem;
+    color: #5b6975;
+}
+
+.benefits-list li {
+    margin-bottom: 0.8rem;
+    line-height: 1.7;
+}
+
+/* Boutons */
+.cta-button,
+.book-btn,
+.submit-btn {
+    background: linear-gradient(135deg, #3498db, #2a7fb8);
+    color: #fff;
+    border: none;
+    border-radius: 12px;
+    padding: 0.95rem 1.5rem;
+    text-decoration: none;
+    display: inline-block;
+    font-weight: 600;
+    box-shadow: 0 10px 20px rgba(52,152,219,0.18);
+    transition: all 0.3s ease;
+}
+
+.cta-button:hover,
+.book-btn:hover,
+.submit-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 14px 28px rgba(52,152,219,0.24);
+}
+
+/* Contact preview */
+.contact-preview {
+    text-align: center;
+    background: linear-gradient(180deg, #ffffff 0%, #eef6fb 100%);
+    border-top: 1px solid rgba(52, 152, 219, 0.08);
+    border-bottom: 1px solid rgba(52, 152, 219, 0.08);
+}
+
+/* Images médecins / blog plus premium */
+.doctor-image,
+.blog-image,
+.article-image {
+    border-bottom: 1px solid rgba(44, 62, 80, 0.06);
+}
+
+/* Footer un peu plus élégant */
+footer {
+    background: linear-gradient(135deg, #22384d, #2c3e50);
+    color: white;
+    text-align: center;
+    padding: 1.2rem;
+    margin-top: 2rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .small-hero h1 {
+        font-size: 2.1rem;
+    }
+
+    .small-hero p {
+        font-size: 1rem;
+    }
+
+    .service-card,
+    .faq-card,
+    .service-box {
+        padding: 1.4rem;
+    }
+}
