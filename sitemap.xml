@@ -6,6 +6,10 @@
   </url>
 
   <url>
+    <loc>https://ela103.github.io/cabinet/index.html</loc>
+  </url>
+
+  <url>
     <loc>https://ela103.github.io/cabinet/services.html</loc>
   </url>
 
@@ -18,11 +22,31 @@
   </url>
 
   <url>
+    <loc>https://ela103.github.io/cabinet/doctors.html</loc>
+  </url>
+
+  <url>
+    <loc>https://ela103.github.io/cabinet/appointments.html</loc>
+  </url>
+
+  <url>
     <loc>https://ela103.github.io/cabinet/faq.html</loc>
   </url>
 
   <url>
     <loc>https://ela103.github.io/cabinet/blog.html</loc>
+  </url>
+
+  <url>
+    <loc>https://ela103.github.io/cabinet/blog-cardiologie.html</loc>
+  </url>
+
+  <url>
+    <loc>https://ela103.github.io/cabinet/blog-dermatologie.html</loc>
+  </url>
+
+  <url>
+    <loc>https://ela103.github.io/cabinet/blog-medecine-generale.html</loc>
   </url>
 
 </urlset>
